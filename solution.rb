@@ -30,7 +30,7 @@ class Deck
     def choose_card
         choose_card = @cards.sample
         @cards.delete(choose_card)
-        
+
     end
 
   
@@ -39,7 +39,7 @@ end
   class Card
     attr_reader :suit, :rank
     @@all = []
-    def initialize(suit, rank)
+    def initialize
       @suit = suit
       @rank = rank
       @@all << self
